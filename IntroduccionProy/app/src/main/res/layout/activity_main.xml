@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtValor2"
+        android:layout_width="318dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Valor2"
+        android:inputType="textPersonName"
+        android:onClick="suma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <EditText
+        android:id="@+id/edtValor1"
+        android:layout_width="314dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Valor1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtValor2"
+        app:layout_constraintEnd_toEndOf="@+id/edtValor2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtValor2" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="76dp"
+        android:onClick="suma"
+        android:text="Sumar"
+        app:layout_constraintEnd_toEndOf="@+id/edtValor2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtValor2"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor2" />
+
+    <TextView
+        android:id="@+id/txvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtValor2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/edtValor2"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor2" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="324dp"
+        android:layout_height="56dp"
+        android:onClick="resta"
+        android:text="Restar"
+        app:layout_constraintEnd_toEndOf="@+id/btnSuma"
+        app:layout_constraintStart_toStartOf="@+id/btnSuma"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuma" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:onClick="multi"
+        android:text="Multiplicar"
+        app:layout_constraintEnd_toEndOf="@+id/btnRestar"
+        app:layout_constraintStart_toStartOf="@+id/btnRestar"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="323dp"
+        android:layout_height="63dp"
+        android:onClick="dividir"
+        android:text="Dividir"
+        app:layout_constraintEnd_toEndOf="@+id/btnMulti"
+        app:layout_constraintStart_toStartOf="@+id/btnMulti"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
+</androidx.constraintlayout.widget.ConstraintLayout>
