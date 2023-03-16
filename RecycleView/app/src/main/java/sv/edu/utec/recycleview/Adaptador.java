@@ -33,11 +33,13 @@ public class Adaptador extends RecyclerView.Adapter<Elementos>
     public void onBindViewHolder(@NonNull Elementos holder, int position)
     {
         Elementos.tvnompeli.setText(modelos.get(position).getNompeli());
+        Elementos.tvgenpeli.setText(modelos.get(position).getGenepeli());
+        Elementos.imvpeli.setImageResource(Integer.parseInt(modelos.get(position).getImgpeli()));
     }
 
     @Override
     public int getItemCount()
     {
-        return 0;
+        return modelos.size();
     }
 }

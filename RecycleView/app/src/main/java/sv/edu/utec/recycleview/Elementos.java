@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class Elementos extends RecyclerView.ViewHolder
 {
     static TextView tvnompeli, tvgenpeli;
-    ImageView imvpeli;
+    static ImageView imvpeli;
 
     public Elementos(@NonNull View itemView)
     {
