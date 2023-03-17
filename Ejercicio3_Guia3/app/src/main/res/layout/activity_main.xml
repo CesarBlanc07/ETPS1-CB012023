@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Numero 1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum1"
+        app:layout_constraintStart_toStartOf="@+id/edtNum1"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum10" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="312dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="297dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Numero 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum1"
+        app:layout_constraintStart_toStartOf="@+id/edtNum1"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1" />
+
+    <EditText
+        android:id="@+id/edtNum3"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Numero 3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum2"
+        app:layout_constraintStart_toStartOf="@+id/edtNum2"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum2" />
+
+    <EditText
+        android:id="@+id/edtNum4"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Numero 4"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum3"
+        app:layout_constraintStart_toStartOf="@+id/edtNum3"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum3" />
+
+    <EditText
+        android:id="@+id/edtNum5"
+        android:layout_width="294dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="Numero 5"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum4"
+        app:layout_constraintStart_toStartOf="@+id/edtNum4"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum4" />
+
+    <EditText
+        android:id="@+id/edtNum6"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Numero 6"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum5"
+        app:layout_constraintStart_toStartOf="@+id/edtNum5"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum5" />
+
+    <EditText
+        android:id="@+id/edtNum7"
+        android:layout_width="295dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Numero 7"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum6"
+        app:layout_constraintStart_toStartOf="@+id/edtNum6"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum6" />
+
+    <EditText
+        android:id="@+id/edtNum8"
+        android:layout_width="291dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="Numero 8"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum7"
+        app:layout_constraintStart_toStartOf="@+id/edtNum7"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum7" />
+
+    <EditText
+        android:id="@+id/edtNum9"
+        android:layout_width="289dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Numero 9"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum8"
+        app:layout_constraintStart_toStartOf="@+id/edtNum8"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum8" />
+
+    <EditText
+        android:id="@+id/edtNum10"
+        android:layout_width="282dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Numero 10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum9"
+        app:layout_constraintStart_toStartOf="@+id/edtNum9"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
